@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  /* --*: initial; */
+  --font-sans: "Inter", "sans-serif";
+
+  /* Tema claro */
+  --color-text-light: #000;
+  --color-stroke-light: rgba(0, 0, 0, 0.5);
+  --color-surface-light: rgba(0, 0, 0, 0.05);
+  --color-surface-hover-light: rgba(0, 0, 0, 0.02);
+  --color-highlight-light: rgba(0, 0, 0, 0.1);
+
+  /* Tema escuro */
+  --color-text-dark: #fff;
+  --color-stroke-dark: rgba(255, 255, 255, 0.5);
+  --color-surface-dark: rgba(255, 255, 255, 0.05);
+  --color-surface-hover-dark: rgba(255, 255, 255, 0.02);
+  --color-highlight-dark: rgba(255, 255, 255, 0.1);
+}

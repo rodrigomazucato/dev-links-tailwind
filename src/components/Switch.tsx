@@ -11,7 +11,7 @@ export function Switch() {
     <div className="flex items-center justify-end w-16">
       <IconeSwitch onClick={alternarTema} temaEscuroAtivo={temaEscuroAtivo} />
       <div
-        className={`w-15 h-4 mr-1 rounded-full outline outline-stroke-${tema}  bg-surface-${tema} `}
+        className={`w-15 h-6 mr-1 rounded-full outline outline-stroke-${tema}  bg-surface-${tema} `}
       />
     </div>
   );

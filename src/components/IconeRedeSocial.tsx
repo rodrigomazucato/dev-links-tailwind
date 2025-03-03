@@ -7,12 +7,12 @@ interface IconeRedeSocialProps extends ComponentProps<"a"> {
 export function IconeRedeSocial({ Icone, ...props }: IconeRedeSocialProps) {
   return (
     <a
-      className="relative flex items-center justify-center cursor-pointer size-14"
+      className="relative flex items-center justify-center cursor-pointer size-14 focus:outline-none focus:bg-highlight-light focus:rounded-full"
       target="_blank"
       {...props}
     >
       <Icone height="24px" width="24px" />
-      <div className="absolute inset-0 rounded-full hover:bg-highlight-light"></div>
+      <div className="absolute inset-0 rounded-full hover:bg-highlight-light "></div>
     </a>
   );
 }

@@ -8,7 +8,7 @@ interface IconeSwitchProps extends ComponentProps<"button"> {
 export function IconeSwitch({ temaEscuroAtivo, ...props }: IconeSwitchProps) {
   return (
     <button
-      className="absolute z-10 flex items-center justify-center w-8 h-8 bg-white rounded-full cursor-pointer focus:outline-8 focus:outline-highlight-light drop-shadow hover:outline-8 hover:outline-highlight-light"
+      className="absolute flex items-center justify-center w-8 h-8 bg-white rounded-full cursor-pointer z-1 focus:outline-8 focus:outline-highlight-light drop-shadow hover:outline-8 hover:outline-highlight-light"
       {...props}
     >
       {temaEscuroAtivo ? (

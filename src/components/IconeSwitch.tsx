@@ -1,4 +1,4 @@
-import { Moon, Sun } from "@phosphor-icons/react";
+import { PiSun as Sun, PiMoon as Moon } from "react-icons/pi";
 
 interface IconeSwitchProps {
   ehTemaEscuro: boolean;

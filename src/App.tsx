@@ -22,14 +22,16 @@ export function App() {
     <div
       className={`bg-[image:var(--background)] bg-cover bg-center transition-all duration-300 ${ehTemaEscuro && "dark"}`}
     >
-      <div className="mx-auto flex w-[540px] flex-col items-center gap-8 py-16">
+      <div className="mx-auto flex w-3/4 flex-col items-center gap-8 py-16 sm:max-w-[34rem]">
         <div className="flex flex-col items-center space-y-4">
           <img
             className={`border-stroke size-28 rounded-full border-2`}
             src={`https://github.com/${usuario}.png`}
             alt="Imagem de perfil"
           />
-          <span className="text-primary">@{usuario}</span>
+          <span className="text-primary font-medium sm:font-normal">
+            @{usuario}
+          </span>
         </div>
         <button
           onClick={alternarTema}
@@ -46,13 +48,13 @@ export function App() {
           <LinkContainer texto="Veja meu portfólio" href="#" />
           <LinkContainer texto="Conheça o Explorer" href="#" />
         </div>
-        <div className="flex justify-between gap-6">
+        <div className="flex w-4/5 justify-between gap-3 sm:w-auto sm:justify-center">
           <IconeRedeSocial Icone={Github} href="https://github.com" />
           <IconeRedeSocial Icone={Instagram} href="https://instagram.com" />
           <IconeRedeSocial Icone={Youtube} href="https://youtube.com" />
           <IconeRedeSocial Icone={Linkedin} href="https://linkedin.com" />
         </div>
-        <span className="text-primary text-sm">
+        <span className="text-primary px-2 text-center text-sm sm:text-base">
           Feito com muita dedicação 🚀 por <u>Rodrigo Mazucato</u>
         </span>
       </div>

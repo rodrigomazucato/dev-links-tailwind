@@ -1,18 +1,20 @@
-import { ComponentProps, ComponentType } from "react";
+import { ComponentProps } from "react";
+import { IconType } from "react-icons";
 
 interface IconeRedeSocialProps extends ComponentProps<"a"> {
-  Icone: ComponentType<any>;
+  Icone: IconType;
 }
 
 export function IconeRedeSocial({ Icone, ...props }: IconeRedeSocialProps) {
   return (
     <a
-      className="relative flex items-center justify-center cursor-pointer size-14 focus:outline-none focus:bg-highlight-light focus:rounded-full"
+      className="focus:bg-highlight relative flex size-14 cursor-pointer items-center justify-center focus:rounded-full focus:outline-none"
       target="_blank"
+      rel="noopener noreferrer"
       {...props}
     >
-      <Icone height="24px" width="24px" />
-      <div className="absolute inset-0 rounded-full hover:bg-highlight-light "></div>
+      <Icone className="text-primary size-7" />
+      <div className="hover:bg-highlight absolute inset-0 rounded-full"></div>
     </a>
   );
 }
